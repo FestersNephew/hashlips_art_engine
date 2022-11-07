@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Unique Fun-gi";
+const description = "This is a collection of unique mushroom images, shared with Love from a very fun gi. Some were made using Dalle2 AI image generation.  Find your connection in the mycelial web!";
+const baseUri = "ipfs://bafybeig323ig3fp7btrvmxty7yguxt45rhs2uuv3itp4sqaneio45nonsm";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +24,9 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 60,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
     ],
   },
 ];
@@ -42,14 +36,14 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
 const gif = {
-  export: false,
-  repeat: 0,
+  export: true,
+  repeat: -1,
   quality: 100,
   delay: 500,
 };
